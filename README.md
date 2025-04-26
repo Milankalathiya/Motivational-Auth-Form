@@ -24,8 +24,6 @@ This is a simple and stylish Login and Register form that displays motivational 
 2. Open `index.html` or `regu.html` in your browser.
 3. Quotes will randomly load, and you can toggle dark mode!
 
-## Live Demo
-(You can add GitHub Pages link later here if you deploy.)
 
 ## Author
-Made with ❤️ by [Your Name]
+Made with ❤️ by Milan Kalathiya
