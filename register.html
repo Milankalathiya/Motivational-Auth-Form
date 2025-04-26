@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Quotes above form inside container -->
+  <div class="quote-container">
+    <p id="quoteText">Loading motivation...</p>
+  </div>
+
+  <h2>Register</h2>
+
+  <form id="registerForm" onsubmit="return validateRegister()">
+    <input type="text" id="regName" placeholder="Full Name">
+    <span class="error" id="regNameError"></span>
+
+    <input type="email" id="regEmail" placeholder="Email">
+    <span class="error" id="regEmailError"></span>
+
+    <input type="tel" id="regPhone" placeholder="Phone Number">
+    <span class="error" id="regPhoneError"></span>
+
+    <select id="regCountry">
+      <option value="">Select Country</option>
+      <option value="India">India</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="Australia">Australia</option>
+      <option value="Canada">Canada</option>
+    </select>
+    <span class="error" id="regCountryError"></span>
+
+    <div class="checkbox">
+      <input type="checkbox" id="terms">
+      <label for="terms">I agree to Terms and Conditions</label>
+    </div>
+    <span class="error" id="regTermsError"></span>
+
+    <button type="submit">Register</button>
+    <p>Already have an account? <a href="index.html">Login</a></p>
+  </form>
+
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
+    <span>Dark Mode</span>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

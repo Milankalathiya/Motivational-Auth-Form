@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #4b7bec;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #3867d6;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.checkbox {
+  margin-top: 15px;
+  text-align: left;
+}
+
+/* Toggle Switch Button */
+.toggle-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4b7bec;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #1e272e;
+  color: #d2dae2;
+}
+
+.dark-mode .container {
+  background: rgba(72, 86, 96, 0.9);
+  color: white;
+}
+
+.dark-mode input, .dark-mode select {
+  background-color: #485460;
+  color: white;
+  border: 1px solid #7f8fa6;
+}
+
+.dark-mode button {
+  background-color: #26de81;
+}
+
+.dark-mode button:hover {
+  background-color: #20bf6b;
+}
+.quote-container {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-style: italic;
+  color: #555;
+  animation: fadeIn 2s;
+}
+
+/* Adjust color in dark mode */
+.dark-mode .quote-container {
+  color: #d2dae2;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

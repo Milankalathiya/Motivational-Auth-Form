@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Quotes above form inside container -->
+  <div class="quote-container">
+    <p id="quoteText">Loading motivation...</p>
+  </div>
+
+  <h2>Login</h2>
+
+  <form id="loginForm" onsubmit="return validateLogin()">
+    <input type="text" id="loginUsername" placeholder="Username">
+    <span class="error" id="loginUsernameError"></span>
+
+    <input type="password" id="loginPassword" placeholder="Password">
+    <span class="error" id="loginPasswordError"></span>
+
+    <button type="submit">Login</button>
+    <p>Don't have an account? <a href="register.html">Register</a></p>
+  </form>
+
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
+    <span>Dark Mode</span>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
